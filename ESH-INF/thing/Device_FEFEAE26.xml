@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<thing:thing-descriptions xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bindingId="openocean" xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+  <!--Sample Thing Type-->
+  <thing-type id="Device_FEFEAE26">
+    <supported-bridge-type-refs>
+      <bridge-type-ref id="enoceanBridge"/>
+    </supported-bridge-type-refs>
+    <label>New Thing</label>
+    <description>This is a new Thing.</description>
+    <channels>
+      <channel id="buttonA0" typeId="buttonA0"/>
+      <channel id="buttonAI" typeId="buttonAI"/>
+      <channel id="buttonB0" typeId="buttonB0"/>
+      <channel id="buttonBI" typeId="buttonBI"/>
+    </channels>
+  </thing-type>
+  <!--Sample channel Type-->
+  <channel-type id="buttonA0">
+    <item-type>String</item-type>
+    <label>String</label>
+    <description>this is a desciption</description>
+    <category>this is a category</category>
+  </channel-type>
+  <channel-type id="buttonAI">
+    <item-type>String</item-type>
+    <label>String</label>
+    <description>this is a desciption</description>
+    <category>this is a category</category>
+  </channel-type>
+  <channel-type id="buttonB0">
+    <item-type>String</item-type>
+    <label>String</label>
+    <description>this is a desciption</description>
+    <category>this is a category</category>
+  </channel-type>
+  <channel-type id="buttonBI">
+    <item-type>String</item-type>
+    <label>String</label>
+    <description>this is a desciption</description>
+    <category>this is a category</category>
+  </channel-type>
+</thing:thing-descriptions>

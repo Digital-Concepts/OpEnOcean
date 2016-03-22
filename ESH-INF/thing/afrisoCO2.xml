@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="openocean"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+        xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+
+    <!-- Sample Thing Type -->
+    <thing-type id="AfrisoCO2">
+        <supported-bridge-type-refs>
+            <bridge-type-ref id="enoceanBridge" />            
+        </supported-bridge-type-refs>
+        <label>AfrisoCO2-Thing</label>
+        <description>This is the Standard afrisoCO2 </description>
+        <channels>
+            <channel id="co2" typeId="co2" />
+        </channels>
+
+    </thing-type>
+    
+    <channel-type id="co2">
+        <item-type>Number</item-type>
+        <label>AfrisoCO2</label>
+        <description>afrisoCO2-channel for EnOcean Binding</description>
+    </channel-type>
+</thing:thing-descriptions>

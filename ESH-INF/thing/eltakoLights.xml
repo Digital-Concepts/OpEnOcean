@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="openocean"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+        xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+
+    <!-- Sample Thing Type -->
+    <thing-type id="Permundo_Aktor">
+        <supported-bridge-type-refs>
+            <bridge-type-ref id="enoceanBridge" />            
+        </supported-bridge-type-refs>
+        
+        <label>Eltako-Light Thing</label>
+        <description>Light-thing to link openHAB and EnOcean </description>
+        
+        <channels>
+            <channel id="dimValue" typeId="dimValue" />
+        </channels>   
+        
+    </thing-type>
+    
+    <!-- Sample Channel Type -->
+    <channel-type id="dimValue">
+        <item-type>Switch</item-type>
+        <label>Switch</label>
+        <description>Sample switch-channel for EnOcean Binding</description>
+        <category>Light</category>
+    </channel-type>
+
+</thing:thing-descriptions>

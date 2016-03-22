@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="openocean"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:thing="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0"
+        xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0 http://eclipse.org/smarthome/schemas/thing-description-1.0.0.xsd">
+
+    <!-- Sample Thing Type -->
+    <thing-type id="toto">
+        <supported-bridge-type-refs>
+            <bridge-type-ref id="enoceanBridge" />            
+        </supported-bridge-type-refs>
+        
+        <label>Windows Contact: Thing</label>
+        <description>This is the Standard Windows Contact </description>
+        <channels>
+            <channel id="contact" typeId="contact"/>
+        </channels>
+    </thing-type>
+    
+    <channel-type id="contact">
+        <item-type>Contact</item-type>
+        <label>Contact</label>
+        <description>Contact-channel for EnOcean Binding</description>
+        <category>Contact</category>
+    </channel-type>
+</thing:thing-descriptions>
